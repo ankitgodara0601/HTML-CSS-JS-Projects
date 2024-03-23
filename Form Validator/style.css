@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    width: 100%;
+    background-color: rgb(31, 115, 241);
+}
+
+.container{
+    position: relative;
+    padding: 30px 25px;
+    max-width: 300px;
+    width: 100%;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.container header{
+    font-size: 18px;
+    font-weight: 600;
+}
+
+
+.container .email-input{
+    margin-top: 20px;
+    width: 100%;
+    font-size: 12px;
+    padding: 10px 8px;
+    color: #707070;
+    border: 1px solid #707070;
+    border-radius: 6px;
+    outline: none;
+}
+
+.container .error{
+    display: flex;
+    align-items: center;
+    color: red;
+    margin-top: 6px;
+    font-size: 10px;
+    display: none;
+}
+.invalid .error{
+    display: flex;
+}
+
+.container .error .error-icon{
+    margin-right: 6px;
+    font-size: 12px;
+}
+
+.container .pass{
+    position: relative;
+    margin-top: 14px;
+}
+
+.pass .pass-input-field{
+    position: relative;
+}
+
+.container .pass input{
+    width: 100%;
+    font-size: 12px;
+    padding: 10px 8px;
+    color: #707070;
+    border: 1px solid #707070;
+    border-radius: 6px;
+    outline: none;
+}
+
+.container .pass .hide-icon{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 10px;
+    opacity: 0.6;
+    cursor: pointer;
+    font-size: 13px;
+}
+.container .pass .hide-icon:hover{
+    opacity: 1;
+}
+
+.container .confirm-pass{
+    position: relative;
+    margin-top: 14px;
+}
+
+.confirm-pass .confirm-pass-input-field{
+    position: relative;
+}
+
+.container .confirm-pass input{
+    width: 100%;
+    font-size: 12px;
+    padding: 10px 8px;
+    color: #707070;
+    border: 1px solid #707070;
+    border-radius: 6px;
+    outline: none;
+}
+
+.container .confirm-pass .hide-icon{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 10px;
+    opacity: 0.6;
+    font-size: 13px;
+    cursor: pointer;
+}
+.container .confirm-pass .hide-icon:hover{
+    opacity: 1;
+}
+
+.container .btn{
+    margin-top: 20px;
+    width: 100%;
+    padding: 10px 0;
+    border: none;
+    color: #ebeaea;
+    background-color: rgb(40, 105, 202);
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.container .btn:active{
+    scale: 0.96;
+}
